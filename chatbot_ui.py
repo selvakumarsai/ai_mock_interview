@@ -15,6 +15,7 @@ from interview_practice_system import (
 from streamlit_mic_recorder import mic_recorder
 
 openai_api_key = st.secrets["openai_api_key"]
+os.environ['OPENAI_API_KEY'] = openai_api_key
 
 llm = ChatOpenAI(
     model_name="gpt-4", 
