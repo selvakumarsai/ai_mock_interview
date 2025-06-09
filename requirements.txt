@@ -4,3 +4,7 @@ openai-whisper
 #sqlite3 == 3.35.0
 chromadb
 pysqlite3
+streamlit-mic-recorder
+speechrecognition
+openai-whisper
+chromadb
