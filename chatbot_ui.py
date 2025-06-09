@@ -4,6 +4,7 @@ import whisper
 import tempfile
 import pysqlite3
 import sys
+from langchain_openai import ChatOpenAI
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import os
 from interview_practice_system import (
