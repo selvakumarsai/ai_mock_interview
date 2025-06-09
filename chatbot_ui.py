@@ -26,6 +26,14 @@ if "messages" not in st.session_state:
     st.session_state.follow_up_question = None
     st.session_state.is_generating_follow_up = False
 
+OPENAI_API_KEY = st.secrets["OPENAIAPI_KEY"]
+
+llm = ChatOpenAI(
+    model_name="gpt-4", 
+    temperature=0.1,
+    openai_api_key=OPENAI_API_KEY
+)
+
 # Sidebar for interview setup
 with st.sidebar:
     st.header("Interview Setup")
