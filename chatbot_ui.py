@@ -17,6 +17,9 @@ from streamlit_mic_recorder import mic_recorder
 openai_api_key = st.secrets["openai_api_key"]
 os.environ['OPENAI_API_KEY'] = openai_api_key
 
+SERPER_KEY = st.secrets["SERPER_KEY"]
+os.environ['SERPER_KEY'] = SERPER_KEY
+
 llm = ChatOpenAI(
     model_name="gpt-4", 
     temperature=0.1,
