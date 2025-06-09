@@ -2,6 +2,9 @@ import streamlit as st
 import asyncio
 import whisper
 import tempfile
+import pysqlite3
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import os
 from interview_practice_system import (
     initialize_preparation_crew,
