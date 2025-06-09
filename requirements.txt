@@ -3,7 +3,7 @@ crewai_tools
 openai-whisper
 #sqlite3 == 3.35.0
 chromadb
-pysqlite3
+pysqlite3-binary
 streamlit-mic-recorder
 speechrecognition
 openai-whisper
