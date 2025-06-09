@@ -8,3 +8,4 @@ streamlit-mic-recorder
 speechrecognition
 openai-whisper
 chromadb
+langchain_openai
